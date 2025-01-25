@@ -255,6 +255,41 @@ video {
   color: #fff;
 }
 
+
+@media (max-width: 1200px) {
+  .video-container{
+    right: 15%;
+  }
+}
+
+@media (max-width: 900px) {
+  .video-container{
+    right: 12%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .video-container{
+    right: 30%;
+  }
+}
+
+@media (min-width: 2500px) {
+  .video-container{
+    right: 35%;
+  }
+}
+@media (max-width: 450px) {
+
+  .form-container form{
+    margin-left: 20%;
+  }
+
+  .video-container{
+    right: 10%;
+  }
+
+}
 </style>
 
 <style>
