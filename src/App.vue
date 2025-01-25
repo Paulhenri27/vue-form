@@ -23,7 +23,7 @@ const handleLogin = async () => {
 
   try {
     // Make a POST request to the backend
-    const response = await fetch('https://prospects-six.vercel.app/users', {
+    const response = await fetch('https://prospects-coral.vercel.app/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
