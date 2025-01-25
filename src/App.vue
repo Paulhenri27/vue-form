@@ -23,7 +23,7 @@ const handleLogin = async () => {
 
   try {
     // Make a POST request to the backend
-    const response = await fetch('http://localhost:5000/users', {
+    const response = await fetch('https://prospects-six.vercel.app/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -35,7 +35,8 @@ const handleLogin = async () => {
       }),
     });
 
-    if (response.ok) {
+    if (response.ok) 
+    {
       const result = await response.json();
       console.log('User added successfully:', result);
 
