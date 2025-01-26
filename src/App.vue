@@ -27,7 +27,7 @@ const handleLogin = async () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        "x-api": import.meta.env.VITE_API_KEY,
+        "x-api-key": import.meta.env.VITE_API_KEY,
       },
       body: JSON.stringify({
         email: email.value,
