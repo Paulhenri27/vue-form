@@ -113,7 +113,7 @@ const closeVideo = () => {
   height: 100%; /* Ensure .page takes the full height of its parent (#app) */
 }
 .menu {
-    background-color: #F5F5DC;
+    background-color: #d4d4d4;
 }
 .image-menu {
     width: 100px;
