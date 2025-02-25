@@ -71,8 +71,8 @@ const closeVideo = () => {
       <div class="split">
         <div class="form-container">
           <div class="top">
-            <div class="title">Dashboard Login</div>
-            <div class="sub-title">Login with your account</div>
+            <div class="title">We’ve Got Big Plans!</div>
+            <div class="sub-title">Sign Up and Stay Informed</div>
           </div>
           <form @submit.prevent="handleLogin">
             <input 
