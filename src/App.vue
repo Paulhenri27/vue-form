@@ -1,6 +1,6 @@
 <script setup>
 import exampleImage from '@/assets/logo.jpg';
-import backgroundVideo from '@/assets/video.mp4';
+import backgroundVideo from '@/assets/form.mp4';
 import { ref } from "vue";
 
 // Reactive variables for input values
