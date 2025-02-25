@@ -116,7 +116,7 @@ const closeVideo = () => {
     background-color: #d4d4d4;
 }
 .image-menu {
-    width: 100px;
+    width: 80px;
 }
 .views {
     
