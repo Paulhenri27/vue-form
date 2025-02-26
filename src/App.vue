@@ -23,21 +23,20 @@ const handleLogin = async () => {
 
   try {
     // Make a POST request to the backend
-    const response = await fetch('https://prospects-coral.vercel.app/users', {
+    const response = await fetch('http://localhost:5173/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        "x-api-key": import.meta.env.VITE_API_KEY,
       },
       body: JSON.stringify({
         email: email.value,
-        number: parseInt(number.value, 10), // Ensure the number is sent as an integer
+        number: parseInt(number.value, 10), 
       }),
     });
 
     if (response.ok) 
     {
-      const result = await response.json();
+      const result = await response.text();
       console.log('User added successfully:', result);
 
       // Show the video and add the blur effect
