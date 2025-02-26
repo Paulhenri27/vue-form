@@ -23,7 +23,7 @@ const handleLogin = async () => {
 
   try {
     // Make a POST request to the backend
-    const response = await fetch('http://localhost:5173/register', {
+    const response = await fetch('http://rhea.sasg.de:5173/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
