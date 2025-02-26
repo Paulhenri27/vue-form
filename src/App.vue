@@ -42,6 +42,8 @@ const handleLogin = async () => {
       // Show the video and add the blur effect
       isVideoVisible.value = true;
       isEffectActive.value = true;
+      email.value = ''; // Clear the email input
+      number.value = ''; // Clear the number input+
     } else {
       console.error('Failed to add user:', await response.text());
     }
