@@ -29,7 +29,7 @@ const handleLogin = async () => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        email: email.value,
+        email: email.value.toLocaleLowerCase(),
         number: parseInt(number.value, 10), 
       }),
     });
