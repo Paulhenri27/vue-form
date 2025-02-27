@@ -263,6 +263,13 @@ video {
   color: #fff;
 }
 
+.error {
+  color: red;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-right: 41px;
+    text-align: end;
+}
 
 @media (max-width: 1200px) {
   .video-container{
@@ -316,13 +323,6 @@ video {
 
 }
 
-.error {
-  color: red;
-    font-size: 24px;
-    margin-bottom: 10px;
-    margin-right: 41px;
-    text-align: end;
-}
 </style>
 
 <style>
