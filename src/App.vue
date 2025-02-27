@@ -115,6 +115,14 @@ const closeVideo = () => {
 </template>
 
 <style scoped>
+.views .split .form-container .error {
+  color: red;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-right: 41px;
+    text-align: end;
+}
+
 .page {
   display: flex;
   flex-direction: column; /* Stack children vertically */
@@ -263,13 +271,7 @@ video {
   color: #fff;
 }
 
-.error {
-  color: red;
-    font-size: 24px;
-    margin-bottom: 10px;
-    margin-right: 41px;
-    text-align: end;
-}
+
 
 @media (max-width: 1200px) {
   .video-container{
@@ -307,7 +309,7 @@ video {
   margin-right: 25px;
 }
 
-.error {
+.views .split .form-container .error {
     color: red;
     margin-bottom: 10px;
     margin-right: 41px;
