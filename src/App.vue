@@ -80,7 +80,7 @@ const closeVideo = () => {
             <div class="title">We’ve Got Big Plans!</div>
             <div class="sub-title">Sign Up and Stay Informed</div>
           </div>
-          <div v-if="message.length <= 0"></div>
+          <div v-if="message.length <= 0" class="error"></div>
           <div v-if="message.length > 0" class="error">{{ message }}</div>
           <form @submit.prevent="handleLogin">
             <input 
