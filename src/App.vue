@@ -6,6 +6,7 @@ import { ref } from "vue";
 // Reactive variables for input values
 const email = ref('');
 const number = ref('');
+const message = ref('');
 
 // Reactive variables for dynamic classes
 const isVideoVisible = ref(false); // Controls the visibility of the video
@@ -23,7 +24,7 @@ const handleLogin = async () => {
 
   try {
     // Make a POST request to the backend
-    const response = await fetch('https://register.rhea.comagno.com/register', {
+    const response = await fetch('http://localhost:5173/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -44,7 +45,10 @@ const handleLogin = async () => {
       isEffectActive.value = true;
       email.value = ''; // Clear the email input
       number.value = ''; // Clear the number input+
-    } else {
+    } 
+    else 
+    {
+      message.value = 'Failed to add user. Please try again.';
       console.error('Failed to add user:', await response.text());
     }
   } catch (error) {
@@ -75,6 +79,8 @@ const closeVideo = () => {
             <div class="title">We’ve Got Big Plans!</div>
             <div class="sub-title">Sign Up and Stay Informed</div>
           </div>
+          <div v-if="message.length <= 0"></div>
+          <div v-if="message.length > 0" class="error">{{ message }}</div>
           <form @submit.prevent="handleLogin">
             <input 
               type="email" 
@@ -290,6 +296,21 @@ video {
     right: 10%;
   }
 
+}
+@media (max-width: 350px) {
+
+.form-container .top{
+  margin-right: 25px;
+}
+
+}
+
+.error {
+  color: red;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-right: 41px;
+    text-align: end;
 }
 </style>
 
