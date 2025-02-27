@@ -24,7 +24,7 @@ const handleLogin = async () => {
 
   try {
     // Make a POST request to the backend
-    const response = await fetch('http://localhost:5173/register', {
+    const response = await fetch('https://register.rhea.comagno.com/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -45,6 +45,7 @@ const handleLogin = async () => {
       isEffectActive.value = true;
       email.value = ''; // Clear the email input
       number.value = ''; // Clear the number input+
+      message.value = ''; // Clear the error message
     } 
     else 
     {
