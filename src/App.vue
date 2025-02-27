@@ -314,6 +314,7 @@ video {
     margin-bottom: 10px;
     margin-right: 41px;
     text-align: end; 
+    font-size: 20px;
 }
 
 }
