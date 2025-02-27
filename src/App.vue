@@ -300,6 +300,10 @@ video {
   margin-right: 25px;
 }
 
+.error {
+    font-size: 15px;  
+}
+
 }
 @media (max-width: 350px) {
 
