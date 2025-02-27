@@ -324,6 +324,15 @@ video {
   margin-right: 25px;
 }
 
+.views .split .form-container .error {
+    color: red;
+    margin-bottom: 10px;
+    margin-right: 41px;
+    text-align: end; 
+    font-size: 15px;
+}
+
+
 }
 
 </style>
