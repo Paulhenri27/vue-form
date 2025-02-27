@@ -295,6 +295,9 @@ video {
   .video-container{
     right: 10%;
   }
+  .form-container .top{
+  margin-right: 25px;
+}
 
 }
 @media (max-width: 350px) {
